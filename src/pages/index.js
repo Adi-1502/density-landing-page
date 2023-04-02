@@ -51,14 +51,14 @@ export default function Home() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div>
+    <>
       <NavBar />
       <GetEarlyAccess />
       <Cards />
       <FaqSection />
-      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="title">
+      {/* <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="title">
         Hello World
-      </h1>
+      </h1> */}
       <SocialMedia></SocialMedia>
       <motion.div
         className="cursor"
