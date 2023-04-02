@@ -5,7 +5,7 @@ function NavBar() {
     useState(false);
 
   return (
-    <nav class="bg-gray-800">
+    <nav class="bg-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <leftPart class="flex items-center">

@@ -9,6 +9,7 @@ import FaqSection from "@/components/Faq";
 import SocialMedia from "@/components/SocialMedia";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MainComp } from "@/components/MainComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,18 +54,19 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <GetEarlyAccess />
+      <MainComp />
+      {/* <GetEarlyAccess />
       <Cards />
-      <FaqSection />
+      <FaqSection /> */}
       {/* <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="title">
         Hello World
       </h1> */}
-      <SocialMedia></SocialMedia>
+      {/* <SocialMedia></SocialMedia>
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-      />
+      /> */}
     </>
   );
 }
