@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cursor {
+  border: 0.5px solid transparent;
+  box-shadow: 0 0 0 4px orange;
+  height: 42px;
+  width: 42px;
+  border-radius: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
