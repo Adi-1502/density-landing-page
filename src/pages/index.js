@@ -3,13 +3,21 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
+import GetEarlyAccess from "@/components/GetEarlyAccess";
+import Cards from "@/components/Cards";
+import FaqSection from "@/components/Faq";
+import SocialMedia from "@/components/SocialMedia";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <NavBar />
+      <GetEarlyAccess />
+      <Cards />
+      <FaqSection />
+      <SocialMedia></SocialMedia>
     </>
   );
 }
