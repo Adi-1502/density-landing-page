@@ -6,13 +6,13 @@ const FaqItem = ({ question, answer }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="border-b border-gray-300 pb-4">
+    <div className="pb-4">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={toggle}
       >
-        <h3 className="text-lg font-medium">{question}</h3>
-        {isOpen ? "-" : "+"}
+        <h3 className="text-[18px] font-medium">{question}</h3>
+        <div class="text-[30px]">{isOpen ? "-" : "+"}</div>
       </div>
       {isOpen && <p className="mt-4 text-gray-600">{answer}</p>}
     </div>
@@ -38,8 +38,8 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-gray-900">
+    <div className="w-[70%] mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-[40px] font-bold text-gray-900 flex justify-center mb-[70px]">
         Frequently Asked Questions
       </h2>
       <div className="mt-6">
