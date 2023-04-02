@@ -40,14 +40,15 @@ export default function Home() {
       y: mousePosition.y - 16,
     },
     text: {
-      height: 150,
-      width: 150,
+      height: 100,
+      width: 100,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      backgroundColor: "yellow",
-      mixBlendMode: "difference",
     },
   };
+
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
 
   return (
     <>
@@ -55,6 +56,9 @@ export default function Home() {
       <GetEarlyAccess />
       <Cards />
       <FaqSection />
+      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="title">
+        Hello World
+      </h1>
       <SocialMedia></SocialMedia>
       <motion.div
         className="cursor"
