@@ -55,18 +55,18 @@ export default function Home() {
     <>
       <NavBar />
       <MainComp />
-      {/* <GetEarlyAccess />
+      <GetEarlyAccess />
       <Cards />
-      <FaqSection /> */}
+      <FaqSection />
       {/* <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="title">
         Hello World
       </h1> */}
-      {/* <SocialMedia></SocialMedia>
+      <SocialMedia></SocialMedia>
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-      /> */}
+      />
     </>
   );
 }
